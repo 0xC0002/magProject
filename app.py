@@ -21,10 +21,7 @@ def extrair_campos_linha_a_linha(texto):
         "Contrato Sistema jurídico ID",
         "Pagnet Descrição Pagamento",
         "Competência Evento",
-<<<<<<< HEAD
-=======
         "Serviço de TI",
->>>>>>> 8c1e99a (serviço de TI added)
     ]
     skip_vals = {"", "Selecione um valor...", "Projeto", "T1- Filial", "T2 - Centro de Custo"}
     for rotulo in rotulos:
@@ -81,11 +78,7 @@ class JanelaCampos(tk.Toplevel):
         except Exception:
             pass
         self.title("MAG")
-<<<<<<< HEAD
-        self.geometry("500x680")
-=======
-        self.geometry("500x740")
->>>>>>> 8c1e99a (serviço de TI added)
+        self.geometry("500x780")
         frm = ttk.Frame(self)
         frm.pack(fill="both", expand=True, padx=10, pady=10)
         canvas = tk.Canvas(frm)
