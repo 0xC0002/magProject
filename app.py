@@ -12,6 +12,7 @@ def extrair_campos_linha_a_linha(texto):
     valores = {}
     # rótulos
     rotulos = [
+        "CNPJ",
         "Pagnet Empresa",
         "Pagnet Filial",
         "Centro de Custo Solicitante",
@@ -78,7 +79,7 @@ class JanelaCampos(tk.Toplevel):
         except Exception:
             pass
         self.title("MAG")
-        self.geometry("500x740")
+        self.geometry("500x800")
         frm = ttk.Frame(self)
         frm.pack(fill="both", expand=True, padx=10, pady=10)
         canvas = tk.Canvas(frm)
