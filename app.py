@@ -78,7 +78,7 @@ class JanelaCampos(tk.Toplevel):
         except Exception:
             pass
         self.title("MAG")
-        self.geometry("500x780")
+        self.geometry("500x740")
         frm = ttk.Frame(self)
         frm.pack(fill="both", expand=True, padx=10, pady=10)
         canvas = tk.Canvas(frm)
@@ -130,8 +130,4 @@ def main():
             break
     root.quit()
 if __name__ == "__main__":
-<<<<<<< HEAD
     main()
-=======
-    main()
->>>>>>> 8c1e99a (serviço de TI added)
