@@ -5,7 +5,11 @@ a = Analysis(
     ['app.py'],
     pathex=[],
     binaries=[],
+<<<<<<< HEAD
     datas=[('Mag.ico', '.')],
+=======
+    datas=[],
+>>>>>>> 8c1e99a (serviço de TI added)
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},
@@ -35,5 +39,8 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
+<<<<<<< HEAD
     icon=['Mag.ico'],
+=======
+>>>>>>> 8c1e99a (serviço de TI added)
 )
