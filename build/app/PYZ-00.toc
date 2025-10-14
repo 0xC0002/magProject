@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-('C:\\Users\\bruno\\OneDrive\\Área de '
- 'Trabalho\\repos\\magProject\\provisao\\build\\app\\PYZ-00.pyz',
-=======
 ('H:\\repos\\magAutomatizacao\\espelho pagNET\\build\\app\\PYZ-00.pyz',
->>>>>>> 8c1e99a (serviço de TI added)
  [('__future__',
    'C:\\Users\\bruno\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\__future__.py',
    'PYMODULE'),
