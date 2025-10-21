@@ -96,9 +96,14 @@ class JanelaCampos(tk.Toplevel):
         for rot, val in campos.items():
             fg = "blue" if val else "red"
             ttk.Label(inner, text=rot+":", foreground=fg, font=("Segoe UI",10,"bold")).pack(anchor="w", pady=(5,0))
-            btn = tk.Button(inner, text=val or "<vazio>", width=60,
-                            bg="white" if val else "red", fg="black" if val else "white",
-                            command=lambda v=val: self.copiar_para_clipboard(v))
+            if rot == "Contrato Sistema jurídico ID" and val:
+                btn = tk.Button(inner, text=val or "<vazio>", width=60,
+                                bg="white" if val else "red", fg="black" if val else "white",
+                                command=lambda v=val: self.copiar_para_clipboard(f"ID - {v.strip()}"))
+            else:
+                btn = tk.Button(inner, text=val or "<vazio>", width=60,
+                                bg="white" if val else "red", fg="black" if val else "white",
+                                command=lambda v=val: self.copiar_para_clipboard(v))
             btn.pack(anchor="w", pady=(0,5))
         ttk.Button(self, text="Fechar Janela", command=self.destroy).pack(pady=(5,10))
 
