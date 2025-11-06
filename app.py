@@ -99,7 +99,7 @@ class JanelaCampos(tk.Toplevel):
             if rot == "Contrato Sistema jurídico ID" and val:
                 btn = tk.Button(inner, text=val or "<vazio>", width=60,
                                 bg="white" if val else "red", fg="black" if val else "white",
-                                command=lambda v=val: self.copiar_para_clipboard(f"ID - {v.strip()}"))
+                                command=lambda v=val: self.copiar_para_clipboard(f"ID {v.strip()} - "))
             else:
                 btn = tk.Button(inner, text=val or "<vazio>", width=60,
                                 bg="white" if val else "red", fg="black" if val else "white",
